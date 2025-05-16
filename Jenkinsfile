@@ -5,7 +5,7 @@ pipeline {
     string(name: 'NAME', description: 'Please tell me your name?')
     string(name: 'Address', description: 'Enter your address, for the pipeline trigger')
     text(name: 'DESC', description: 'Describe about the job details')
-    choice(name: 'BRANCH', choices: ['Dev', 'Stage', 'prod', 'uat'], description: 'Choose one environment')
+    choice(name: 'BRANCH', choices: ['Dev', 'Stage', 'uat'], description: 'Choose one environment')
     booleanParam(name: 'SKIP_TEST', defaultValue: false, description: 'Skip running test cases?')
     password(name: 'SONAR_SERVER_PWD', defaultValue: '', description: 'Enter Sonar server password')
   }
